@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/bj2">
     <TextView
         android:id="@+id/tv_title"
         android:text="跳蚤市场"
         android:textSize="40sp"
         android:textStyle="bold"
+        android:visibility="gone"
         android:textColor="@color/colorGreenLight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -20,20 +22,34 @@
         android:text="刷新"
         android:textSize="22sp"
         android:textColor="@color/colorPurple"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="0dp"/>
+
+    <TextView
+        android:id="@+id/tv_add_hanfu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="上传"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:textColor="@color/colorPurple"
         android:layout_marginStart="340dp"
-        android:layout_marginTop="12dp"/>
+        android:layout_marginBottom="5dp"/>
+
     <TextView
         android:id="@+id/tv_student_number"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/tv_title"
-        android:textSize="18sp"
-        android:textColor="@color/colorBlack"
+        android:textSize="22sp"
+        android:text="欢迎马文菲"
+        android:textColor="@color/colorBlue"
         android:gravity="center_horizontal"
         android:textStyle="italic"
         android:layout_marginBottom="4dp"/>
+
     <ImageButton
-        android:id="@+id/ib_learning_use"
+        android:id="@+id/ib_add_product"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_below="@+id/tv_student_number"
@@ -43,7 +59,7 @@
         android:background="@color/colorWhite"
         android:layout_marginStart="15dp"/>
     <ImageButton
-        android:id="@+id/ib_electric_product"
+        android:id="@+id/ib_add_product2"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:layout_marginStart="110dp"
@@ -58,7 +74,7 @@
         android:layout_height="80dp"
         android:layout_marginStart="205dp"
         android:layout_below="@id/tv_student_number"
-        android:src="@drawable/icon_daily_use"
+        android:src="@drawable/icon_home_page"
         android:scaleType="centerCrop"
         android:visibility="gone"
         android:background="@color/colorWhite"/>
@@ -72,24 +88,31 @@
         android:scaleType="centerCrop"
         android:visibility="gone"
         android:background="@color/colorWhite"/>
-    <TextView
-        android:id="@+id/tv_learning_use"
-        android:layout_width="80dp"
-        android:layout_height="30dp"
-        android:text="学习用品"
-        android:textStyle="bold"
-        android:textSize="18sp"
-        android:layout_below="@+id/ib_learning_use"
-        android:layout_marginStart="15dp"/>
-    <TextView
-        android:id="@+id/tv_electric_product"
-        android:layout_width="80dp"
-        android:layout_height="25dp"
-        android:text="电子用品"
-        android:textStyle="bold"
-        android:textSize="18sp"
-        android:layout_below="@+id/ib_electric_product"
-        android:layout_marginStart="110dp"/>
+
+        <TextView
+            android:id="@+id/tv_learning_use"
+            android:layout_width="200dp"
+            android:gravity="center_horizontal"
+            android:layout_height="30dp"
+            android:text="学习用品"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_below="@+id/ib_learning_use"
+            android:layout_marginStart="15dp"/>
+        <TextView
+            android:id="@+id/tv_electric_product"
+            android:layout_width="match_parent"
+            android:gravity="left"
+            android:layout_height="25dp"
+            android:text="电子用品"
+            android:visibility="gone"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_below="@+id/ib_electric_product"
+            android:layout_marginStart="110dp"/>
+
+
     <TextView
         android:id="@+id/tv_daily_use"
         android:layout_width="80dp"
@@ -97,6 +120,7 @@
         android:text="生活用品"
         android:textSize="18sp"
         android:textStyle="bold"
+        android:visibility="gone"
         android:layout_below="@+id/ib_daily_use"
         android:layout_marginStart="205dp"/>
     <TextView
@@ -104,59 +128,65 @@
         android:layout_width="80dp"
         android:layout_height="25dp"
         android:text="体育用品"
+        android:visibility="gone"
         android:textSize="18sp"
         android:textStyle="bold"
         android:layout_below="@+id/ib_sports_good"
         android:layout_marginStart="310dp"/>
     <ListView
+
         android:id="@+id/lv_all_commodity"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/tv_electric_product"
+        android:layout_below="@+id/tv_sports_good"
         android:layout_marginTop="4dp"
-        android:layout_above="@+id/view2"/>
+        android:layout_above="@+id/tv_home_page"/>
 
     <View android:id="@+id/view1"
         android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_above="@+id/view2"
-        android:background="@color/colorBlack"
+        android:layout_height="1dp"
+        android:layout_above="@+id/ib_home_page"
+        android:background="@color/silver"
         android:layout_marginTop="70dp"/>
+
     <ImageButton
         android:id="@+id/ib_home_page"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_above="@+id/tv_home_page"
         android:src="@drawable/icon_home_page"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="5dp"/>
-    <View android:id="@+id/view2"
-        android:layout_width="2dp"
-        android:layout_height="60dp"
-        android:layout_above="@+id/view4"
-        android:layout_marginStart="130dp"
-        android:background="@color/colorBlack"/>
+
     <ImageButton
-        android:id="@+id/ib_add_product"
+        android:id="@+id/ib_learning_use"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_above="@+id/tv_add_product"
-        android:src="@drawable/icon_add_product"
-        android:layout_marginStart="180dp"
+        android:src="@drawable/man1"
+        android:layout_marginStart="130dp"
         android:layout_marginTop="5dp"/>
-    <View android:id="@+id/view3"
-        android:layout_above="@+id/view4"
-        android:layout_width="2dp"
-        android:layout_height="60dp"
-        android:background="@color/colorBlack"
-        android:layout_marginStart="270dp"/>
+
+
+
+    <ImageButton
+        android:id="@+id/ib_electric_product"
+        android:layout_width="23dp"
+        android:layout_height="27dp"
+        android:layout_above="@+id/tv_add_product"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="3dp"
+        android:src="@drawable/nv1" />
+
+
     <ImageButton
         android:id="@+id/ib_personal_center"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_above="@+id/tv_personal_center"
         android:src="@drawable/icon_personal_center"
-        android:layout_marginStart="320dp"
+        android:layout_marginStart="330dp"
         android:layout_marginTop="5dp"/>
     <TextView
         android:id="@+id/tv_home_page"
@@ -166,27 +196,39 @@
         android:textSize="15sp"
         android:textStyle="bold"
         android:layout_above="@+id/view4"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="40dp"
         android:layout_marginBottom="5dp"/>
     <TextView
         android:id="@+id/tv_add_product"
         android:layout_width="70dp"
         android:layout_height="20dp"
-        android:text="发布闲置"
+        android:text="男装"
         android:textStyle="bold"
         android:textSize="15sp"
         android:layout_above="@+id/view4"
-        android:layout_marginStart="165dp"
+        android:layout_marginStart="130dp"
         android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_add_product2"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:text="女装"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_above="@+id/view4"
+        android:layout_marginStart="230dp"
+        android:layout_marginBottom="5dp"/>
+
     <TextView
         android:id="@+id/tv_personal_center"
         android:layout_width="70dp"
         android:layout_height="20dp"
-        android:text="个人中心"
+        android:text="我的"
         android:textSize="15sp"
         android:textStyle="bold"
         android:layout_above="@+id/view4"
-        android:layout_marginStart="305dp"
+        android:layout_marginStart="330dp"
         android:layout_marginBottom="5dp"/>
     <View android:id="@+id/view4"
         android:layout_width="match_parent"

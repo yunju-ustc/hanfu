@@ -4,8 +4,9 @@
     android:layout_height="match_parent">
     <TextView
         android:id="@+id/tv_my_commodity"
-        android:text="我的发布"
-        android:textSize="40sp"
+        android:text="我的上传（马文菲）"
+        android:textSize="24sp"
+        android:visibility="gone"
         android:textStyle="bold"
         android:textColor="@color/Turquoise"
         android:layout_width="match_parent"
@@ -30,7 +31,7 @@
         android:textSize="22sp"
         android:textColor="@color/colorRed"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="15dp"/>
+        android:layout_marginTop="0dp"/>
     <TextView
         android:id="@+id/tv_back"
         android:layout_width="wrap_content"
@@ -39,7 +40,7 @@
         android:textSize="22sp"
         android:textColor="@color/colorRed"
         android:layout_marginStart="330dp"
-        android:layout_marginTop="15dp"/>
+        android:layout_marginTop="0dp"/>
     <ListView
         android:id="@+id/lv_my_commodity"
         android:layout_width="match_parent"

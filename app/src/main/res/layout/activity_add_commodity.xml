@@ -2,11 +2,11 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBlueLight">
+    android:background="@drawable/bj4">
     <TextView
         android:id="@+id/tv_publish_info"
-        android:text="发布商品"
-        android:textSize="40sp"
+        android:text="上传汉服图片"
+        android:textSize="30sp"
         android:textStyle="bold"
         android:textColor="@color/colorGreenLight"
         android:layout_width="match_parent"
@@ -19,6 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/tv_publish_info"
         android:textSize="18sp"
+        android:visibility="gone"
         android:textColor="@color/colorBlack"
         android:layout_marginTop="8dp"
         android:gravity="center_horizontal"
@@ -83,6 +84,7 @@
         android:layout_width="80dp"
         android:layout_height="40dp"
         android:text="价格"
+        android:visibility="gone"
         android:textSize="22sp"
         android:layout_below="@+id/tv_type"
         android:layout_marginStart="25dp"
@@ -91,6 +93,7 @@
         android:id="@+id/et_price"
         android:layout_width="260dp"
         android:layout_height="40dp"
+        android:visibility="gone"
         android:layout_below="@+id/spn_type"
         android:layout_marginTop="20dp"
         android:layout_marginStart="105dp"
@@ -104,6 +107,7 @@
         android:layout_width="110dp"
         android:layout_height="40dp"
         android:text="联系方式"
+        android:visibility="gone"
         android:textSize="22sp"
         android:layout_below="@+id/tv_price"
         android:layout_marginStart="7dp"
@@ -118,6 +122,7 @@
         android:textColor="@color/colorBlue"
         android:inputType="phone"
         android:maxLines="1"
+        android:visibility="gone"
         android:hint="请输入联系方式"
         android:textSize="18sp"/>
     <TextView

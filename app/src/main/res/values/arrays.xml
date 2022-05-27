@@ -2,9 +2,7 @@
 <resources>
     <string-array name="product_type">
         <item>请选择类别</item>
-        <item>学习用品</item>
-        <item>电子用品</item>
-        <item>体育用品</item>
-        <item>生活用品</item>
+        <item>古风男装</item>
+        <item>古风女装</item>
     </string-array>
 </resources>

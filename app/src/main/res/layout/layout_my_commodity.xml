@@ -7,16 +7,10 @@
     android:paddingRight="10dp"
     android:paddingTop="10dp"
     android:paddingBottom="10dp"
-    android:background="@color/colorBlueLight">
-    <ImageView
-        android:id="@+id/iv_commodity"
-        android:layout_width="140dp"
-        android:layout_height="140dp"
-        android:scaleType="centerCrop"
-        android:background="@color/colorWhite"
-        android:src="@drawable/icon_my_goods"/>
+    android:background="@color/white">
+
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:paddingLeft="20dp">
@@ -26,43 +20,54 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="一个娃娃"
+            android:layout_gravity="top"
             android:textSize="25sp"
-            android:textColor="@color/colorBlue"/>
+            android:textColor="@color/colorPurple"/>
         <TextView
             android:id="@+id/tv_type"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="生活用品"
+            android:visibility="gone"
             android:textSize="22sp"
-            android:textColor="@color/colorOrange"
+            android:textColor="@color/colorBlack"
             android:layout_marginTop="8dp"/>
         <TextView
             android:id="@+id/tv_description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="这只娃娃很可爱的!"
-            android:textColor="@color/colorGreen"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/colorBlack"
             android:textSize="18sp"
             android:layout_marginTop="6dp"/>
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="8dp">
-            <TextView
-                android:id="@+id/tv_price"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="12元"
-                android:textColor="@color/colorRed"
-                android:textSize="22sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="20dp"
-                android:text="长按商品项可删除"
-                android:textColor="@color/colorRed"
-                android:textSize="15sp"/>
-        </LinearLayout>
+            android:text="作者: "
+            android:visibility="gone"
+            android:layout_gravity="bottom"
+            android:textColor="@color/colorBrown"
+            android:textSize="22sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_price1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="单击删除，长按访问 "
+            android:layout_gravity="bottom"
+            android:textColor="@color/colorBrown"
+            android:textSize="22sp"
+            />
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_commodity"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:scaleType="centerCrop"
+        android:background="@color/colorWhite"
+        android:src="@drawable/icon_my_goods"/>
 </LinearLayout>

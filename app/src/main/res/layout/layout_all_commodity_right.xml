@@ -46,17 +46,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="作者: "
-            android:layout_gravity="bottom"
-            android:textColor="@color/colorBrown"
-            android:textSize="22sp"
             android:visibility="gone"
-            />
-
-        <TextView
-            android:id="@+id/tv_price1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="单击删除，长按访问 "
             android:layout_gravity="bottom"
             android:textColor="@color/colorBrown"
             android:textSize="22sp"

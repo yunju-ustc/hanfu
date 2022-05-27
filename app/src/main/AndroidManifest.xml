@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.leaf.collegeidleapp">
+    package="com.mawenfei.hanfu">
 
     <uses-feature
         android:name="android.hardware.camera"
@@ -15,23 +15,25 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/icon"
+        android:icon="@drawable/gfmv"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/icon"
+        android:roundIcon="@drawable/gfmv"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.MyCollectionActivity"></activity>
-        <activity android:name=".activity.CommodityTypeActivity" />
-        <activity android:name=".activity.ReviewCommodityActivity" />
-        <activity android:name=".activity.MyCommodityActivity" />
-        <activity android:name=".activity.ModifyInfoActivity" />
-        <activity android:name=".activity.MyInfoActivity" />
-        <activity android:name=".activity.ModifyPwdActivity" />
-        <activity android:name=".activity.PersonalCenterActivity" />
-        <activity android:name=".activity.AddCommodityActivity" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".activity.RegisterActivity" />
-        <activity android:name=".activity.LoginActivity">
+        <activity android:name="com.mawenfei.hanfu.activity.MyCollectionActivity"></activity>
+        <activity android:name="com.mawenfei.hanfu.activity.CommodityTypeActivity" />
+        <activity android:name="com.mawenfei.hanfu.activity.ReviewCommodityActivity" />
+        <activity android:name="com.mawenfei.hanfu.activity.MyCommodityActivity" />
+        <activity android:name="com.mawenfei.hanfu.activity.ModifyInfoActivity" />
+        <activity android:name="com.mawenfei.hanfu.activity.MyInfoActivity" />
+        <activity android:name="com.mawenfei.hanfu.activity.ModifyPwdActivity" />
+        <activity android:name="com.mawenfei.hanfu.activity.PersonalCenterActivity" />
+        <activity android:name="com.mawenfei.hanfu.activity.AddCommodityActivity" />
+        <activity android:name="com.mawenfei.hanfu.MainActivity" >
+
+        </activity>
+        <activity android:name="com.mawenfei.hanfu.activity.RegisterActivity" />
+        <activity android:name="com.mawenfei.hanfu.activity.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

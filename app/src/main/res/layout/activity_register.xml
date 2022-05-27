@@ -3,11 +3,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="5dp"
-    android:background="@color/colorBlueLight">
+    android:background="@drawable/bj3">
     <TextView
         android:id="@+id/tv_title"
-        android:text="用户注册"
-        android:textSize="40sp"
+        android:text="注册（马文菲）"
+        android:textSize="24sp"
         android:textStyle="italic"
         android:textColor="@color/colorGreen"
         android:layout_width="match_parent"
@@ -29,7 +29,7 @@
         android:layout_below="@+id/tv_title"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="150dp"
         android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"/>
     <EditText

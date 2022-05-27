@@ -4,9 +4,10 @@
     android:layout_height="match_parent">
     <TextView
         android:id="@+id/tv_my_collection"
-        android:text="我的收藏"
-        android:textSize="40sp"
+        android:text="我的收藏（马文菲）"
+        android:textSize="24sp"
         android:textStyle="bold"
+        android:visibility="gone"
         android:textColor="@color/colorBrown"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -30,7 +31,7 @@
         android:textSize="22sp"
         android:textColor="@color/colorPurple"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="15dp"/>
+        android:layout_marginTop="0dp"/>
     <TextView
         android:id="@+id/tv_back"
         android:layout_width="wrap_content"
@@ -39,7 +40,7 @@
         android:textSize="22sp"
         android:textColor="@color/colorPurple"
         android:layout_marginStart="330dp"
-        android:layout_marginTop="15dp"/>
+        android:layout_marginTop="0dp"/>
     <ListView
         android:id="@+id/lv_my_collection"
         android:layout_width="match_parent"
